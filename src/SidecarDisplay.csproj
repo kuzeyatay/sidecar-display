@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>SidecarDisplay</AssemblyName>
+    <Version>0.2.1</Version>
+    <Product>Sidecar Display</Product>
+    <Description>Use a Windows laptop as an extra display over your local network.</Description>
+    <RepositoryUrl>https://github.com/kuzeyatay/sidecar-display</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+  <ItemGroup><InternalsVisibleTo Include="SidecarDisplay.Tests" /></ItemGroup>
+</Project>

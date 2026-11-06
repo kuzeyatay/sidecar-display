@@ -1,0 +1,27 @@
+name: Bug report
+description: Report a problem with Sidecar Display.
+body:
+  - type: markdown
+    attributes:
+      value: Do not include invitations, private IP addresses, or screenshots of private desktop content.
+  - type: input
+    id: version
+    attributes:
+      label: Sidecar versions
+      description: Include the version on both PCs.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Windows versions, sender/receiver hardware, Wi-Fi or Ethernet, and stream quality.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: What did you do, what did you expect, and what happened?
+    validations:
+      required: true

@@ -1,0 +1,11 @@
+.tools/
+**/bin/
+**/obj/
+dist/
+artifacts/
+.vs/
+*.user
+*.suo
+*.invite
+# One-off repair script for the development PC; not part of the product.
+/fix-current-lan-firewall.ps1
