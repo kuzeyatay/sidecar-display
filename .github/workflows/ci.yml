@@ -14,7 +14,7 @@ jobs:
     runs-on: windows-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7.0.1
       - uses: actions/setup-dotnet@v5
         with:
           global-json-file: global.json
@@ -23,13 +23,13 @@ jobs:
         run: ./build.ps1 -Test -TestMode Core -Package
       - name: Upload verification
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: verification
           path: artifacts/core/verification.json
           if-no-files-found: warn
       - name: Upload portable package
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: SidecarDisplay-Windows-x64
           path: |
